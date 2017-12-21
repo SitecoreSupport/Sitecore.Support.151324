@@ -17,7 +17,7 @@ namespace Sitecore.Support.Modules.EmailCampaign.Messages
                 if (tokens == null)
                 {
                     Type t = typeof(MessageItem);
-                    tokens = t.GetField("_customPersonTokens", System.Reflection.BindingFlags.Instance | System.Reflection.BindingFlags.NonPublic);
+                    tokens = t.GetField("customPersonTokens", System.Reflection.BindingFlags.Instance | System.Reflection.BindingFlags.NonPublic);
                 }
 
                 return tokens;
